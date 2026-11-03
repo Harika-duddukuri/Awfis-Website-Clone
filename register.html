@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Awfis</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-box">
+            <a href="CaseStudy.html" class="close-btn">×</a>
+            <h1>Sign up</h1>
+            <form id="registerForm">
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Name">
+                <p id="nameError"></p>
+                <input
+                    type="text"
+                    id="mobile"
+                    placeholder="Mobile">
+                <p id="mobileError"></p>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email">
+                <p id="emailError"></p>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Password">
+                <p id="passwordError"></p>
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm Password">
+                <p id="confirmPasswordError"></p>
+                <div class="agreement">
+                    <input
+                        type="checkbox"
+                        id="agreement">
+                    <label for="agreement">
+                        I agree to
+                        <span>User Agreement</span>
+                        and
+                        <span>Guest policy</span>
+                    </label>
+                </div>
+                <p id="agreementError"></p>
+                <button
+                    type="submit"
+                    class="register-btn">
+                    REGISTER
+                </button>
+            </form>
+            <a
+                href="login.html"
+                class="login-account">
+                ALREADY HAVE AN ACCOUNT
+        </a>
+        </div>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

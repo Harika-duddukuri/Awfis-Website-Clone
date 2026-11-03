@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+}
+.register-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.register-box {
+    position: relative;
+    width: 850px;
+    background-color: #ffffff;
+    padding: 55px 90px 45px;
+    text-align: center;
+    box-shadow: 0 5px 25px;
+}
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 300;
+    color: #999;
+}
+.close-btn:hover {
+    color: #ef5b5b;
+}
+.register-box h1 {
+    font-size: 38px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 35px;
+}
+#registerForm input[type="text"],
+#registerForm input[type="email"],
+#registerForm input[type="password"] {
+    width: 100%;
+    height: 58px;
+    border: 1px solid #eeeeee;
+    outline: none;
+    padding: 0 18px;
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 8px;
+}
+#registerForm input::placeholder {
+    color: #aaa;
+}
+#registerForm input::focus {
+    border-color: #ddd;
+}
+#registerForm p {
+    text-align: left;
+    color: #e25555;
+    font-size: 13px;
+    margin: 0 0 5px 5px;
+}
+.agreement {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 18px 0 10px;
+    text-align: left;
+}
+.agreement input {
+    width: 22px;
+    height: 22px;
+}
+.agreement label {
+    font-size: 15px;
+    color: #555;
+}
+.agreement span {
+    color: #5c9ba8;
+}
+.register-btn {
+    width: 100%;
+    height: 55px;
+    border: none;
+    background-color: #e95757;
+    color: white;
+    font-size: 17px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.register-btn:hover {
+    background-color: #d94d4d;
+}
+.login-account:hover{
+    color: #e95757;
+}
+
+
+@media (max-width: 900px) {
+    .register-container {
+        padding: 30px 20px;
+    }
+    .register-box {
+        width: 90%;
+        max-width: 500px;
+        padding: 35px 30px;
+    }
+    .register-box h1 {
+        font-size: 32px;
+    }
+    .register-box input {
+        width: 100%;
+        height: 48px;
+        font-size: 14px;
+    }
+    .register-btn {
+        width: 100%;
+        height: 48px;
+    }
+    .login-account {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .register-container {
+        min-height: 100vh;
+        padding: 20px 15px;
+    }
+    .register-box {
+        width: 100%;
+        max-width: 400px;
+        padding: 30px 20px;
+    }
+    .register-box h1 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+    .close-btn {
+        font-size: 20px;
+        top: 15px;
+        right: 18px;
+    }
+    .register-box input {
+        width: 100%;
+        height: 46px;
+        font-size: 14px;
+        padding: 0 12px;
+    }
+    .register-box p {
+        font-size: 12px;
+    }
+    .agreement {
+        font-size: 12px;
+        gap: 6px;
+        align-items: flex-start;
+    }
+    .agreement input {
+        width: auto;
+        height: auto;
+        margin-top: 2px;
+    }
+    .register-btn {
+        width: 100%;
+        height: 46px;
+        font-size: 13px;
+    }
+    .login-account {
+        font-size: 11px;
+        margin-top: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .register-container {
+        padding: 15px 10px;
+    }
+    .register-box {
+        padding: 28px 16px;
+    }
+    .register-box h1 {
+        font-size: 25px;
+    }
+    .register-box input {
+        height: 44px;
+        font-size: 13px;
+    }
+    .register-btn {
+        height: 44px;
+    }
+    .agreement {
+        font-size: 11px;
+    }
+}

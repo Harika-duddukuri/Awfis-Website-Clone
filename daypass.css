@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+.offer-bar {
+    height: 48px;
+    background-color: #f45b61;
+    color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+.offer-content {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-shrink: 0;
+    animation: offerScroll 18s linear infinite;
+}
+.offer-content span {
+    font-size: 14px;
+    font-weight: 400;
+    flex-shrink: 0;
+}
+.offer-content span:nth-child(even) {
+    font-size: 18px;
+    font-weight: bold;
+}
+@keyframes offerScroll {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.awfis-navbar {
+    background-color: #20282d;
+    min-height: 90px;
+    padding: 10px 0;
+}
+.awfis-logo {
+    color: white !important;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: -3px;
+    margin-right: 35px;
+}
+.awfis-navbar .nav-link {
+    color: white !important;
+    font-size: 13px;
+    margin-right: 18px;
+    white-space: nowrap;
+}
+.awfis-navbar .nav-link:hover {
+    color: #f45b61 !important;
+}
+.dropdown-menu {
+    border-radius: 0;
+    border: none;
+}
+.dropdown-item {
+    font-size: 13px;
+    padding: 10px 15px;
+}
+.dropdown-item:hover {
+    background-color: #f45b61;
+    color: white;
+}
+.offers-badge {
+    background-color: #f45b61;
+    color: white;
+    font-size: 8px;
+    padding: 2px 4px;
+    margin-left: 3px;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+.login-link,
+.signup-link {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.login-link:hover,
+.signup-link:hover {
+    color: #f45b61;
+}
+.separator {
+    color: white;
+}
+.secondary-nav {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0 6%;
+    border-bottom: 1px solid #eeeeee;
+    background-color: white;
+}
+.secondary-nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 13px;
+}
+.secondary-nav a:hover {
+    color: #f45b61;
+}
+.download-app {
+    font-weight: bold;
+}
+.breadcrumb-section {
+    padding: 25px 6% 10px;
+    font-size: 13px;
+    color: #777;
+}
+.breadcrumb-section a {
+    color: #777;
+    text-decoration: none;
+}
+.breadcrumb-section a:hover {
+    color: #f45b61;
+}
+.breadcrumb-section span {
+    margin: 0 8px;
+}
+.workspace-section {
+    padding: 25px 6% 80px;
+}
+.workspace-section h1 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 35px;
+}
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+.filters select {
+    width: 220px;
+    height: 48px;
+    border: 1px solid #dddddd;
+    background-color: white;
+    padding: 0 15px;
+    color: #555;
+    font-size: 14px;
+    outline: none;
+}
+.filters select:focus {
+    border-color: #f45b61;
+}
+.workspace-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.workspace-card {
+    background-color: white;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.workspace-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+.workspace-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+.workspace-info {
+    padding: 20px;
+}
+.workspace-info h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+.workspace-info p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 12px;
+}
+.workspace-info h4 {
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.book-btn {
+    width: 100%;
+    border: none;
+    background-color: #f45b61;
+    color: white;
+    padding: 11px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.book-btn:hover {
+    background-color: #d94349;
+}
+.support-button,
+.chat-button {
+    position: fixed;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #f45b61;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.support-button {
+    bottom: 90px;
+}
+.chat-button {
+    bottom: 25px;
+}
+.support-button svg,
+.chat-button svg {
+    width: 25px;
+    height: 25px;
+}
+.support-button:hover,
+.chat-button:hover {
+    background-color: #d94349;
+}
+
+@media (max-width: 1000px) {
+    .workspace-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .awfis-navbar .nav-link {
+        margin-right: 5px;
+    }
+    .awfis-logo {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-fluid.px-5 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .awfis-logo {
+        font-size: 36px;
+    }
+    .workspace-grid {
+        grid-template-columns: 1fr;
+    }
+    .filters {
+        flex-direction: column;
+        align-items: center;
+    }
+    .filters select {
+        width: 100%;
+        max-width: 400px;
+    }
+    .workspace-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .workspace-section h1 {
+        font-size: 30px;
+    }
+    .secondary-nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 15px;
+        gap: 10px;
+    }
+    .breadcrumb-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .offer-content span {
+        font-size: 12px;
+    }
+    .workspace-card img {
+        height: 200px;
+    }
+    .floating-buttons {
+        right: 10px;
+        bottom: 15px;
+    }
+}
+.workspace-section {
+    padding: 25px 2% 80px;
+}
+
+.workspace-section h1 {
+    text-align: left;
+    font-size: 36px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 25px;
+    max-width: 750px;
+}
+.daypass-filter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.daypass-filter span {
+    color: #159eb5;
+    font-size: 13px;
+    font-weight: 500;
+}
+.daypass-filter select {
+    width: 170px;
+    height: 42px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: white;
+    padding: 0 10px;
+    color: #555;
+    outline: none;
+}
+.workspace-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.workspace-card {
+    border: none;
+    box-shadow: none;
+    background: white;
+    overflow: hidden;
+}
+.workspace-card:hover {
+    transform: none;
+    box-shadow: none;
+}
+.workspace-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+.workspace-info {
+    padding: 18px 5px;
+}
+.workspace-info h3 {
+    font-size: 17px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 18px;
+}
+.workspace-info p {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 5px;
+}
+.workspace-info h4 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #555;
+}
+.book-btn {
+    background-color: #f45b61;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 12px;
+}
+
+@media (max-width: 1000px) {
+    .workspace-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .workspace-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .workspace-section h1 {
+        font-size: 28px;
+    }
+    .daypass-filter {
+        justify-content: flex-start;
+    }
+}
+.awfis-navbar {
+    background-color: #ffffff;
+    min-height: 90px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+.awfis-logo {
+    color: #f45b61 !important;
+}
+.awfis-navbar .nav-link {
+    color: #555555 !important;
+}
+.awfis-navbar .nav-link:hover {
+    color: #f45b61 !important;
+}
+.login-link,
+.signup-link {
+    color: #555555;
+}
+.login-link:hover,
+.signup-link:hover {
+    color: #f45b61;
+}
+.separator {
+    color: #777777;
+}
+.awfis-navbar .navbar-toggler {
+    border-color: #dddddd;
+}
+.awfis-navbar .navbar-toggler-icon {
+    filter: none;
+}

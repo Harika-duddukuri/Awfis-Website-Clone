@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #20282d;
+}
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.login-box {
+    position: relative;
+    width: 850px;
+    background-color: white;
+    padding: 75px 90px 50px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 32px;
+    color: #999;
+    text-decoration: none;
+}
+.close-btn:hover {
+    color: #e95757;
+}
+.login-box h1 {
+    font-size: 38px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 40px;
+}
+#loginForm input {
+    width: 100%;
+    height: 62px;
+    border: 1px solid #eeeeee;
+    outline: none;
+    padding: 0 18px;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #555;
+}
+#loginForm input::placeholder {
+    color: #aaa;
+}
+#loginForm input:focus {
+    border-color: #ddd;
+}
+#loginForm p {
+    text-align: left;
+    color: #e25555;
+    font-size: 13px;
+    margin: 0 0 8px 5px;
+}
+.login-btn {
+    width: 60%;
+    height: 58px;
+    margin-top: 15px;
+    border: none;
+    background-color: #e95757;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+.login-btn:hover {
+    background-color: #d94d4d;
+}
+.signup-btn {
+    display: block;
+    width: 285px;
+    margin: 65px auto 50px;
+    padding: 15px 10px;
+    border: 1px solid #e95757;
+    color: #c85b62;
+    text-decoration: none;
+    font-size: 16px;
+}
+.signup-btn:hover {
+    background-color: #e95757;
+    color: white;
+}
+.forgot-password {
+    color: #5d9ca8;
+    text-decoration: none;
+    font-size: 16px;
+}
+.forgot-password:hover {
+    color: #e95757;
+}
+
+
+@media (max-width: 768px) {
+    .login-container {
+        padding: 15px;
+    }
+    .login-box {
+        width: 100%;
+        padding: 55px 30px 40px;
+    }
+    .login-box h1 {
+        font-size: 30px;
+    }
+    .login-btn {
+        width: 100%;
+    }
+    .signup-btn {
+        width: 100%;
+        margin-top: 45px;
+    }
+
+}

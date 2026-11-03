@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Day Pass | Awfis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="daypass.css">
+</head>
+<body>
+
+    <div class="offer-bar">
+        <div class="offer-content">
+            <span>20% OFF on booking for 4-8 hours</span>
+            <span>•</span>
+            <span>20% OFF on Saturdays</span>
+            <span>•</span>
+            <span>MEETING ROOM EXCLUSIVE: 50% OFF on first booking</span>
+            <span>•</span>
+            <span>25% OFF on full day booking</span>
+            <span>•</span>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg awfis-navbar">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand awfis-logo" href="CaseStudy.html">
+                awfis
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#awfisNavbar"
+                aria-controls="awfisNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="awfisNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown">
+                            LOCATIONS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="delhi.html">
+                                    COWORKING SPACE IN DELHI
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="gurgaon.html">
+                                    COWORKING SPACE IN GURGAON
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown">
+                            SOLUTIONS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    COWORKING
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    MOBILITY
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown">
+                            ENTERPRISE
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    TRANSFORM
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    MANAGED OFFICE
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            MEETING ROOMS
+                            <span class="offers-badge">
+                                OFFERS
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="daypass.html">
+                            DAY PASS
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            VIRTUAL OFFICE
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            INVESTOR RELATIONS
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="nav-right">
+                    <a href="login.html" class="login-link">
+                        LOG IN
+                    </a>
+                    <span class="separator">
+                        |
+                    </span>
+
+                    <a href="register.html" class="signup-link">
+                        SIGN UP
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="secondary-nav">
+        <a href="#">
+            BOOK A TOUR
+        </a>
+        <span>|</span>
+        <a href="tel:+919999999999">
+            +91 99999 99999
+        </a>
+        <a href="#" class="download-app">
+            DOWNLOAD APP
+        </a>
+    </div>
+
+    <div class="breadcrumb-section">
+        <a href="CaseStudy.html">
+            Home
+        </a>
+        <span>→</span>
+        <span>
+            Day Pass
+        </span>
+    </div>
+
+    <section class="workspace-section">
+        <h1>
+            Office Day Pass: Your On-Demand Workspace Access
+        </h1>
+
+        <div class="daypass-filter">
+    <span>FILTER BY</span>
+
+    <select id="cityFilter">
+        <option value="all">City</option>
+        <option value="Bengaluru">Bengaluru</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Gurgaon">Gurgaon</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Pune">Pune</option>
+        <option value="Chennai">Chennai</option>
+    </select>
+</div>
+
+            <select id="typeFilter">
+                <option value="all">
+                    Type
+                </option>
+                <option value="Day Pass">
+                    Day Pass
+                </option>
+            </select>
+        </div>
+
+        <div class="workspace-grid">
+            <div class="workspace-card"
+                 data-city="Bengaluru"
+                 data-locality="Koramangala"
+                 data-type="Day Pass">
+                <img
+                    src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80"
+                    alt="Bengaluru Day Pass">
+                <div class="workspace-info">
+                    <h3>
+                        Day Pass - Bengaluru
+                    </h3>
+                    <p>
+                        Koramangala
+                    </p>
+                    <h4>
+                        ₹399
+                    </h4>
+                    <button class="book-btn">
+                        BOOK NOW
+                    </button>
+                </div>
+            </div>
+
+            <div class="workspace-card"
+                 data-city="Delhi"
+                 data-locality="Aerocity"
+                 data-type="Day Pass">
+                <img
+                    src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80"
+                    alt="Delhi Day Pass">
+
+                <div class="workspace-info">
+                    <h3>
+                        Day Pass - Delhi
+                    </h3>
+                    <p>
+                        Aerocity
+                    </p>
+                    <h4>
+                        ₹499
+                    </h4>
+                    <button class="book-btn">
+                        BOOK NOW
+                    </button>
+                </div>
+            </div>
+
+            <div class="workspace-card"
+                 data-city="Gurgaon"
+                 data-locality="MG Road"
+                 data-type="Day Pass">
+                <img
+                    src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80"
+                    alt="Gurgaon Day Pass">
+                <div class="workspace-info">
+                    <h3>
+                        Day Pass - Gurgaon
+                    </h3>
+                    <p>
+                        MG Road
+                    </p>
+                    <h4>
+                        ₹449
+                    </h4>
+                    <button class="book-btn">
+                        BOOK NOW
+                    </button>
+                </div>
+            </div>
+
+            <div class="workspace-card"
+                 data-city="Hyderabad"
+                 data-locality="Hitech City"
+                 data-type="Day Pass">
+                <img
+                    src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80"
+                    alt="Hyderabad Day Pass">
+                <div class="workspace-info">
+                    <h3>
+                        Day Pass - Hyderabad
+                    </h3>
+                    <p>
+                        Hitech City
+                    </p>
+                    <h4>
+                        ₹399
+                    </h4>
+                    <button class="book-btn">
+                        BOOK NOW
+                    </button>
+                </div>
+            </div>
+
+            <div class="workspace-card"
+                 data-city="Pune"
+                 data-locality="Baner"
+                 data-type="Day Pass">
+                <img
+                    src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=80"
+                    alt="Pune Day Pass">
+                <div class="workspace-info">
+                    <h3>
+                        Day Pass - Pune
+                    </h3>
+                    <p>
+                        Baner
+                    </p>
+                    <h4>
+                        ₹449
+                    </h4>
+                    <button class="book-btn">
+                        BOOK NOW
+                    </button>
+                </div>
+            </div>
+
+            <div class="workspace-card"
+                 data-city="Chennai"
+                 data-locality="OMR"
+                 data-type="Day Pass">
+                <img
+                    src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=800&q=80"
+                    alt="Chennai Day Pass">
+                <div class="workspace-info">
+                    <h3>
+                        Day Pass - Chennai
+                    </h3>
+                    <p>
+                        OMR
+                    </p>
+                    <h4>
+                        ₹399
+                    </h4>
+                    <button class="book-btn">
+                        BOOK NOW
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUPPORT BUTTON -->
+<div class="support-button">
+    <svg viewBox="0 0 24 24" fill="none"
+         xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 13V11C4 6.58 7.58 3 12 3C16.42 3 20 6.58 20 11V13"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"/>
+        <path d="M4 13H3C2.45 13 2 13.45 2 14V17C2 17.55 2.45 18 3 18H4V13Z"
+              stroke="white"
+              stroke-width="2"/>
+        <path d="M20 13H21C21.55 13 22 13.45 22 14V17C22 17.55 21.55 18 21 18H20V13Z"
+              stroke="white"
+              stroke-width="2"/>
+        <path d="M20 18C20 20.21 18.21 22 16 22H13"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"/>
+    </svg>
+</div>
+
+<div class="chat-button">
+    <svg viewBox="0 0 24 24" fill="none"
+         xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 11.5C20 16.19 16.19 20 11.5 20C9.93 20 8.47 19.58 7.22 18.86L4 20L5.14 16.78C4.42 15.53 4 14.07 4 12.5C4 7.81 7.81 4 12.5 4C17.19 4 20 6.81 20 11.5Z"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+    </svg>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="daypass.js"></script>
+</body>
+</html>
